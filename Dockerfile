@@ -1,6 +1,5 @@
 FROM justb4/jmeter
 COPY CSVSample.jmx /
-RUN apt-get -y install vim
 RUN jmeter -n -t bin/examples/CSVSample.jmx -l ./bin/examples/Run1.jtl
 RUN ps -a
 RUN mkdir jmeter-results
