@@ -1,5 +1,6 @@
 FROM justb4/jmeter
 VOLUME ["/export"]
+RUN rename 'justb4/jmeter' 'my_new_container'
 RUN container rename jmeter
 CMD ls -l /export
 COPY CSVSample.jmx /
@@ -10,4 +11,4 @@ RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
 RUN cp -v -f ./bin/examples/jmlogs.jtl ./1 
-RUN rm -v justb4/jmeter
+RUN rm jmeter
