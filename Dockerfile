@@ -1,5 +1,6 @@
 FROM justb4/jmeter
 COPY CSVSample.jmx /
+RUN apk add --no-cache bash
 RUN jmeter -n -t bin/examples/CSVSample.jmx -l ./bin/examples/Run1.jtl
 RUN volume inspect bin
 RUN ps -a
