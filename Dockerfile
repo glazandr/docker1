@@ -1,6 +1,5 @@
 FROM justb4/jmeter
 VOLUME ["/export"]
-RUN container rename jmeter
 CMD ls -l /export
 COPY CSVSample.jmx bin/examples/
 RUN apk add --no-cache bash
