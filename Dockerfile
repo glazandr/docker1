@@ -5,4 +5,3 @@ RUN ps -a
 RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN cd examples
-RUN examples ls
