@@ -9,4 +9,4 @@ RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
 RUN cp -v -f ./bin/examples/jmlogs.jtl ./1 
-RUN rm jmeter
+RUN rm /export
