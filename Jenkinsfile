@@ -1,19 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage("build") {
-      steps {
-        sh """
-          docker build -t hello_there .
-        """
-      }
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                echo '==================================jr================================='
+                sh 'docker build . '
+                echo '===================================khkkllk==========================='
+            }
+        }
     }
-    stage("run") {
-      steps {
-        sh """
-          docker run --rm hello_there
-        """
-      }
-    }
-  }
-}
