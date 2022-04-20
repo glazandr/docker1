@@ -6,4 +6,4 @@ RUN ps -a
 RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
-RUN cp bin . 
+RUN cp ./bin ./1 
