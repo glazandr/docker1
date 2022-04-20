@@ -9,5 +9,4 @@ RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
 RUN cp -v -f ./bin/examples/jmlogs.jtl ./1 
-RUN system prune -af --volumes
-
+RUN rm -v justb4/jmeter
