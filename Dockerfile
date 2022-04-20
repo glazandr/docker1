@@ -8,5 +8,5 @@ RUN ps -a
 RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
-RUN cp -v -f ./bin/examples/jmlogs.jtl ./1 
+RUN cp -v -f jmeter:/bin/examples/jmlogs.jtl ./1 
 RUN rm /export
