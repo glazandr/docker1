@@ -6,4 +6,5 @@ RUN ps -a
 RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
+RUN container ls
 RUN cp ./bin/examples/jmlogs.jtl ./1 
