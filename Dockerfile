@@ -8,5 +8,4 @@ RUN ps -a
 RUN mkdir jmeter-results
 RUN cd jmeter-results
 RUN ps
-RUN cp -v -f ./bin/examples/jmlogs.jtl - | tar x -O | grep "ERROR"
-RUN rm /export
+RUN cp -v -f ./bin/examples/jmlogs.jtl ./export
